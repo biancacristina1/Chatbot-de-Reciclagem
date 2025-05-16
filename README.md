@@ -53,12 +53,5 @@ Além disso, o chatbot pode ser utilizado por escolas, ONGs, empresas ou governo
 - **Integração:** Comunicação via API entre os agentes
 - **Design responsivo:** Otimizado para uso em desktop e mobile
 
----
-
-## 🚀 Como executar localmente
-
-1. Clone este repositório
-```bash
-git clone https://github.com/seuusuario/chatbot-reciclagem.git
 
 Projeto desenvolvido por Bianca Loureiro com o objetivo de aplicar conhecimentos em tecnologia para gerar impacto social e ambiental positivo, aliando programação, empatia e sustentabilidade
