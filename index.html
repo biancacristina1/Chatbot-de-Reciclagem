@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consulta de Reciclagem</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Consulta de Reciclagem</h1>
+    
+   <form id="formulario">
+  <label for="produto">Produto:</label>
+  <input type="text" id="produto" required />
+
+  <label for="estado">Estado:</label>
+  <input type="text" id="estado" required />
+
+  <label for="cidade">Cidade:</label>
+  <input type="text" id="cidade" required />
+
+  <label for="bairro">Bairro:</label>
+  <input type="text" id="bairro" required />
+
+  <!-- Mensagem de carregando logo antes do botão -->
+  <div id="carregando" style="display: none; margin-bottom: 10px; color: #2b7a78; font-weight: 600;"></div>
+
+  <button type="submit">Consultar</button>
+</form>
+  </div>
+<div id="modalResultado" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span id="fecharModal" class="close">&times;</span>
+    <div id="resultado"></div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
