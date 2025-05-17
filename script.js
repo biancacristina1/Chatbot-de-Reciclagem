@@ -26,6 +26,7 @@ document.getElementById("formulario").addEventListener("submit", async function(
 });
 
 
+
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
     }
