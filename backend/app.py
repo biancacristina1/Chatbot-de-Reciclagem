@@ -334,14 +334,13 @@ warnings.filterwarnings("ignore")
 app = Flask(__name__)
 CORS(app)  # habilita CORS para permitir chamadas do front-end
 
-@app.route('/reciclagem', methods=['POST'])
-def reciclagem():
-    data = request.get_json()
-
 @app.route('/', methods=['GET'])
 def home():
     return "API do chatbot de reciclagem está no ar!"
-    
+
+@app.route('/reciclagem', methods=['POST'])
+def reciclagem():
+    data = request.get_json()
 
     produto = data.get('produto')
     estado = data.get('estado')
@@ -363,4 +362,3 @@ def home():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
-
