@@ -19,11 +19,12 @@ document.getElementById("formulario").addEventListener("submit", async function(
   resultado.innerHTML = "";
 
   try {
-    const response = await fetch("http://localhost:5000/reciclagem", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(dados),
-    });
+  const response = await fetch("https://chatbot-de-reciclagem.onrender.com/reciclagem", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(dados),
+});
+
 
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
