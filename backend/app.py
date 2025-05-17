@@ -338,6 +338,11 @@ CORS(app)  # habilita CORS para permitir chamadas do front-end
 def reciclagem():
     data = request.get_json()
 
+@app.route('/', methods=['GET'])
+def home():
+    return "API do chatbot de reciclagem está no ar!"
+    
+
     produto = data.get('produto')
     estado = data.get('estado')
     cidade = data.get('cidade')
